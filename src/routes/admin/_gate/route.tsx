@@ -31,7 +31,7 @@ function AdminGate() {
           <ShieldAlert className="mx-auto size-8 text-destructive" />
           <h1 className="mt-4 text-2xl font-semibold">Access denied</h1>
           <p className="mt-2 text-sm text-muted-foreground">
-            This account doesn't hold the Administrator role. The VELORA admin portal is separate from the
+            This account doesn't hold the Administrator role. The velora admin portal is separate from the
             customer portal.
           </p>
           <div className="mt-6 flex flex-wrap justify-center gap-2">

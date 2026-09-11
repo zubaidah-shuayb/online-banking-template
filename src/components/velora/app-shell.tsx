@@ -17,7 +17,7 @@ import {
 import { useState, type ReactNode } from "react";
 import { useAuth } from "@/lib/auth";
 import { SkinSwitcher } from "@/components/velora/skin-switcher";
-import { VELORALogo } from "@/components/velora/logo";
+import { veloraLogo } from "@/components/velora/logo";
 import { MaintenanceBanner } from "@/components/velora/maintenance-banner";
 import { greeting, initials, useNotifications } from "@/lib/dashboard-data";
 import { cn } from "@/lib/utils";
@@ -119,7 +119,7 @@ export function AppShell({
         <aside className="sticky top-0 hidden h-screen w-64 shrink-0 flex-col justify-between border-r border-border/60 px-5 py-7 lg:flex">
           <div className="space-y-8">
             <Link to="/">
-              <VELORALogo />
+              <veloraLogo />
             </Link>
             {nav}
           </div>

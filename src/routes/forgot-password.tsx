@@ -7,8 +7,8 @@ import { authErrorMessage } from "@/lib/auth-errors";
 import { AuthCard, authInput } from "@/components/velora/auth-card";
 import { btn } from "@/components/velora/ui";
 
-const TITLE = "Reset your password — VELORA Bank";
-const DESCRIPTION = "Request a secure password reset link for your VELORA Bank account.";
+const TITLE = "Reset your password — velora Bank";
+const DESCRIPTION = "Request a secure password reset link for your velora Bank account.";
 
 export const Route = createFileRoute("/forgot-password")({
   head: () => ({
@@ -59,7 +59,7 @@ function ForgotPasswordPage() {
       {sent ? (
         <div className="rounded-2xl border border-border bg-surface/50 p-5 text-sm text-muted-foreground">
           If an account exists for <span className="text-foreground">{email}</span>, a reset link is on its
-          way. The link opens the VELORA reset page.
+          way. The link opens the velora reset page.
         </div>
       ) : (
         <form onSubmit={submit} className="space-y-3">

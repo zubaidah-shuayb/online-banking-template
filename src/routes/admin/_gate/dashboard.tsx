@@ -8,11 +8,11 @@ import { formatDate, formatMoney } from "@/integrations/velora/types";
 export const Route = createFileRoute("/admin/_gate/dashboard")({
   head: () => ({
     meta: [
-      { title: "Admin dashboard — VELORA Bank" },
-      { name: "description", content: "VELORA administrator overview of customers, accounts and activity." },
+      { title: "Admin dashboard — velora Bank" },
+      { name: "description", content: "velora administrator overview of customers, accounts and activity." },
       { name: "robots", content: "noindex" },
-      { property: "og:title", content: "Admin dashboard — VELORA Bank" },
-      { property: "og:description", content: "VELORA administrator overview." },
+      { property: "og:title", content: "Admin dashboard — velora Bank" },
+      { property: "og:description", content: "velora administrator overview." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -36,7 +36,7 @@ function AdminDashboard() {
   ];
 
   return (
-    <AdminShell title="Admin dashboard" subtitle="Live snapshot of VELORA Bank.">
+    <AdminShell title="Admin dashboard" subtitle="Live snapshot of velora Bank.">
       <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
         {stats.map((s) => (
           <Link key={s.label} to={s.to}>

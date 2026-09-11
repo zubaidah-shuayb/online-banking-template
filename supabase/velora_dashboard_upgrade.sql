@@ -1,5 +1,5 @@
 -- ==================================================================== --
--- VELORA BANK — dashboard upgrade migration
+-- velora BANK — dashboard upgrade migration
 -- Run this ONCE in Supabase → SQL Editor (after velora_schema.sql)
 -- ==================================================================== --
 

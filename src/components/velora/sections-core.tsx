@@ -163,7 +163,7 @@ export function Security() {
             align="left"
             eyebrow="Security"
             title={<>Protection built into every layer</>}
-            description="VELORA treats your money with absolute discipline — strict access rules, monitored sessions and a complete audit trail."
+            description="velora treats your money with absolute discipline — strict access rules, monitored sessions and a complete audit trail."
           />
           <div className="mt-10 grid gap-3">
             {SECURITY.map((s, i) => (

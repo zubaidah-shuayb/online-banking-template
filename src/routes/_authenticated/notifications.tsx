@@ -14,9 +14,9 @@ import { cn } from "@/lib/utils";
 export const Route = createFileRoute("/_authenticated/notifications")({
   head: () => ({
     meta: [
-      { title: "Notifications — VELORA Bank" },
-      { name: "description", content: "Your VELORA notification center: alerts, transaction updates and bank announcements." },
-      { property: "og:title", content: "Notifications — VELORA Bank" },
+      { title: "Notifications — velora Bank" },
+      { name: "description", content: "Your velora notification center: alerts, transaction updates and bank announcements." },
+      { property: "og:title", content: "Notifications — velora Bank" },
       { property: "og:description", content: "Alerts, transaction updates and announcements in one place." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

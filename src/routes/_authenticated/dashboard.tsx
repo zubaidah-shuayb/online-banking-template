@@ -60,16 +60,16 @@ import { cn } from "@/lib/utils";
 export const Route = createFileRoute("/_authenticated/dashboard")({
   head: () => ({
     meta: [
-      { title: "Your money — VELORA Bank" },
+      { title: "Your money — velora Bank" },
       {
         name: "description",
         content:
           "Premium banking dashboard: virtual cards, balances, insights, analytics and instant transfers.",
       },
-      { property: "og:title", content: "Your money — VELORA Bank" },
+      { property: "og:title", content: "Your money — velora Bank" },
       {
         property: "og:description",
-        content: "Cards, balances, analytics and insights inside your VELORA dashboard.",
+        content: "Cards, balances, analytics and insights inside your velora dashboard.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -257,7 +257,7 @@ function Dashboard() {
 
   function downloadReceipt(t: Transaction) {
     const body = [
-      "VELORA BANK — TRANSACTION RECEIPT",
+      "velora BANK — TRANSACTION RECEIPT",
       "================================",
       `Reference:   ${t.reference}`,
       `Date:        ${formatDate(t.created_at)}`,
@@ -267,7 +267,7 @@ function Dashboard() {
       `Description: ${txnDescription(t)}`,
       `Amount:      ${formatMoney(Number(t.amount), t.currency_code)}`,
       "",
-      "VELORA Bank · Electronically generated receipt, valid without signature.",
+      "velora Bank · Electronically generated receipt, valid without signature.",
     ].join("\n");
     const url = URL.createObjectURL(new Blob([body], { type: "text/plain" }));
     const a = document.createElement("a");
@@ -283,7 +283,7 @@ function Dashboard() {
       <div className="space-y-9">
         {!authLoading && !profile && (
           <Panel className="border-destructive/40 bg-destructive/10 text-sm text-destructive">
-            Your authenticated account is missing its profile record. Run the VELORA authentication repair
+            Your authenticated account is missing its profile record. Run the velora authentication repair
             migration, then refresh this page.
           </Panel>
         )}

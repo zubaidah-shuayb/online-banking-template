@@ -1,5 +1,5 @@
 -- =====================================================================
--- VELORA BANK — Simulation Platform schema (run once in Supabase SQL Editor)
+-- velora BANK — Simulation Platform schema (run once in Supabase SQL Editor)
 -- Safe to re-run: everything is guarded with IF NOT EXISTS / OR REPLACE.
 -- =====================================================================
 
@@ -145,7 +145,7 @@ create table if not exists public.beneficiaries (
   user_id uuid not null references auth.users(id) on delete cascade,
   name text not null,
   account_number text not null,
-  bank_name text not null default 'Velora Bank',
+  bank_name text not null default 'velora Bank',
   currency_code text not null default 'USD',
   is_favorite boolean not null default false,
   created_at timestamptz not null default now()
@@ -198,7 +198,7 @@ alter table public.announcements enable row level security;
 -- ------------------------------------------------------------------ --
 create table if not exists public.bank_settings (
   id boolean primary key default true check (id),
-  bank_name text not null default 'Velora Bank',
+  bank_name text not null default 'velora Bank',
   tagline text not null default 'Banking, reimagined.',
   support_email text not null default 'support@velorabank.sim',
   default_skin text not null default 'classic',
@@ -395,7 +395,7 @@ begin
           coalesce(new.raw_user_meta_data ->> 'currency', 'USD'), 0, true);
 
   insert into public.notifications (user_id, title, body, kind)
-  values (new.id, 'Welcome to Velora Bank', 'Your simulated account is ready. Explore transfers, statements and more.', 'success');
+  values (new.id, 'Welcome to velora Bank', 'Your simulated account is ready. Explore transfers, statements and more.', 'success');
 
   return new;
 end $$;
@@ -448,7 +448,7 @@ begin
     update public.accounts set balance = balance + _amount where id = dst.id returning * into dst;
     insert into public.transactions (account_id, counterparty_account_id, counterparty_name, counterparty_number,
                                      type, status, amount, currency_code, balance_after, category, description, created_by)
-    values (dst.id, src.id, coalesce((select full_name from public.profiles where id = src.user_id), 'Velora customer'),
+    values (dst.id, src.id, coalesce((select full_name from public.profiles where id = src.user_id), 'velora customer'),
             src.account_number, 'transfer', 'completed', _amount, dst.currency_code, dst.balance,
             'transfer', coalesce(nullif(_description, ''), 'Incoming transfer'), auth.uid());
 
@@ -550,7 +550,7 @@ on conflict (slug) do update set name = excluded.name, description = excluded.de
 insert into public.bank_settings (id) values (true) on conflict (id) do nothing;
 
 insert into public.announcements (title, body, severity)
-select 'Welcome to Velora Bank', 'This is a simulation platform. No real money is ever moved.', 'info'
+select 'Welcome to velora Bank', 'This is a simulation platform. No real money is ever moved.', 'info'
 where not exists (select 1 from public.announcements);
 
 -- Backfill for users created before this script ran

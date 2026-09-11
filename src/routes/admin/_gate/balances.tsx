@@ -12,10 +12,10 @@ import { formatMoney, type Account } from "@/integrations/velora/types";
 export const Route = createFileRoute("/admin/_gate/balances")({
   head: () => ({
     meta: [
-      { title: "Balances — VELORA Bank admin" },
-      { name: "description", content: "Credit, debit and freeze VELORA account balances." },
+      { title: "Balances — velora Bank admin" },
+      { name: "description", content: "Credit, debit and freeze velora account balances." },
       { name: "robots", content: "noindex" },
-      { property: "og:title", content: "Balances — VELORA Bank admin" },
+      { property: "og:title", content: "Balances — velora Bank admin" },
       { property: "og:description", content: "Manage customer balances." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

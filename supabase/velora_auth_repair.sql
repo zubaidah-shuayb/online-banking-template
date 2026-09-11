@@ -1,5 +1,5 @@
 -- ==================================================================== --
--- VELORA BANK — authentication/data repair migration
+-- velora BANK — authentication/data repair migration
 -- Run after velora_schema.sql. Safe to run more than once.
 -- Create a PUBLIC Storage bucket named `avatars` in the dashboard first.
 -- ==================================================================== --
@@ -78,7 +78,7 @@ begin
           'Everyday Account', 'checking', coalesce(new.raw_user_meta_data ->> 'currency', 'USD'), 0, true);
 
   insert into public.notifications (user_id, title, body, kind)
-  values (new.id, 'Welcome to Velora Bank', 'Your simulated account is ready.', 'success');
+  values (new.id, 'Welcome to velora Bank', 'Your simulated account is ready.', 'success');
   return new;
 end $$;
 

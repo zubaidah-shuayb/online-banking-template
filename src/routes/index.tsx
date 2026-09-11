@@ -2,12 +2,12 @@ import { createFileRoute } from "@tanstack/react-router";
 import { LandingNav } from "@/components/velora/nav";
 import { Hero } from "@/components/velora/hero";
 import { Features, Showcase, Security } from "@/components/velora/sections-core";
-import { Currencies, WhyVELORA, Faq } from "@/components/velora/sections-more";
+import { Currencies, Whyvelora, Faq } from "@/components/velora/sections-more";
 import { Contact, Newsletter, Footer } from "@/components/velora/sections-contact";
 
-const TITLE = "VELORA Bank — Modern Banking. Timeless Trust.";
+const TITLE = "velora Bank — Modern Banking. Timeless Trust.";
 const DESCRIPTION =
-  "VELORA Bank is premium digital banking: multi-currency accounts, instant transfers, statements, receipts and virtual cards in one elegant platform.";
+  "velora Bank is premium digital banking: multi-currency accounts, instant transfers, statements, receipts and virtual cards in one elegant platform.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -32,7 +32,7 @@ function Index() {
       <Showcase />
       <Security />
       <Currencies />
-      <WhyVELORA />
+      <Whyvelora />
       <Faq />
       <Contact />
       <Newsletter />

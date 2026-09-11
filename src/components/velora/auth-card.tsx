@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { motion } from "motion/react";
 import { ArrowLeft, Eye, EyeOff } from "lucide-react";
 import { useState, type ReactNode } from "react";
-import { VELORALogo } from "@/components/velora/logo";
+import { veloraLogo } from "@/components/velora/logo";
 
 export const authInput =
   "w-full rounded-2xl border border-border bg-surface/50 px-4 py-3 text-sm outline-none transition-colors placeholder:text-muted-foreground/70 focus:border-primary/60";
@@ -42,7 +42,7 @@ export function AuthCard({
         )}
 
         <div className="flex items-center justify-between gap-3">
-          <VELORALogo />
+          <veloraLogo />
           {badge && (
             <span className="rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.16em] text-primary">
               {badge}
@@ -58,7 +58,7 @@ export function AuthCard({
         {footer && <div className="mt-6 text-center text-sm text-muted-foreground">{footer}</div>}
 
         <p className="mt-6 text-center text-[11px] leading-relaxed text-muted-foreground/70">
-          Protected by 256-bit encryption. VELORA will never ask for your password.
+          Protected by 256-bit encryption. velora will never ask for your password.
         </p>
       </motion.div>
     </main>

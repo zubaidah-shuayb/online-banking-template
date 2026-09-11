@@ -9,11 +9,11 @@ import { formatMoney } from "@/integrations/velora/types";
 export const Route = createFileRoute("/admin/_gate/reports")({
   head: () => ({
     meta: [
-      { title: "Reports — VELORA Bank admin" },
-      { name: "description", content: "Portfolio, currency and transaction reporting for VELORA Bank." },
+      { title: "Reports — velora Bank admin" },
+      { name: "description", content: "Portfolio, currency and transaction reporting for velora Bank." },
       { name: "robots", content: "noindex" },
-      { property: "og:title", content: "Reports — VELORA Bank admin" },
-      { property: "og:description", content: "VELORA Bank reporting." },
+      { property: "og:title", content: "Reports — velora Bank admin" },
+      { property: "og:description", content: "velora Bank reporting." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -55,7 +55,7 @@ function AdminReports() {
     const url = URL.createObjectURL(new Blob([lines.join("\n")], { type: "text/csv" }));
     const a = document.createElement("a");
     a.href = url;
-    a.download = "VELORA-balance-report.csv";
+    a.download = "velora-balance-report.csv";
     a.click();
     URL.revokeObjectURL(url);
   }
@@ -73,7 +73,7 @@ function AdminReports() {
     const url = URL.createObjectURL(new Blob([lines.join("\n")], { type: "text/csv" }));
     const a = document.createElement("a");
     a.href = url;
-    a.download = "VELORA-transactions.csv";
+    a.download = "velora-transactions.csv";
     a.click();
     URL.revokeObjectURL(url);
   }

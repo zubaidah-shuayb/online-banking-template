@@ -12,10 +12,10 @@ import type { Currency } from "@/integrations/velora/types";
 export const Route = createFileRoute("/admin/_gate/currencies")({
   head: () => ({
     meta: [
-      { title: "Currencies — VELORA Bank admin" },
-      { name: "description", content: "Manage VELORA currencies and exchange rates." },
+      { title: "Currencies — velora Bank admin" },
+      { name: "description", content: "Manage velora currencies and exchange rates." },
       { name: "robots", content: "noindex" },
-      { property: "og:title", content: "Currencies — VELORA Bank admin" },
+      { property: "og:title", content: "Currencies — velora Bank admin" },
       { property: "og:description", content: "Manage currencies and rates." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

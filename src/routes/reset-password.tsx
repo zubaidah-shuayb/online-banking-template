@@ -7,8 +7,8 @@ import { authErrorMessage } from "@/lib/auth-errors";
 import { AuthCard, authInput, PasswordInput } from "@/components/velora/auth-card";
 import { btn } from "@/components/velora/ui";
 
-const TITLE = "Choose a new password — VELORA Bank";
-const DESCRIPTION = "Set a new password for your VELORA Bank account.";
+const TITLE = "Choose a new password — velora Bank";
+const DESCRIPTION = "Set a new password for your velora Bank account.";
 
 export const Route = createFileRoute("/reset-password")({
   ssr: false,

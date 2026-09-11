@@ -14,10 +14,10 @@ import { cn } from "@/lib/utils";
 export const Route = createFileRoute("/admin/_gate/messages")({
   head: () => ({
     meta: [
-      { title: "Messages — VELORA Bank admin" },
-      { name: "description", content: "Customer enquiries and support messages sent to VELORA Bank." },
+      { title: "Messages — velora Bank admin" },
+      { name: "description", content: "Customer enquiries and support messages sent to velora Bank." },
       { name: "robots", content: "noindex" },
-      { property: "og:title", content: "Messages — VELORA Bank admin" },
+      { property: "og:title", content: "Messages — velora Bank admin" },
       { property: "og:description", content: "Customer enquiries inbox." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -49,7 +49,7 @@ function AdminMessages() {
   });
 
   return (
-    <AdminShell title="Messages" subtitle="Enquiries submitted through the VELORA contact form.">
+    <AdminShell title="Messages" subtitle="Enquiries submitted through the velora contact form.">
       <div className="mb-4 flex gap-1.5">
         {(["open", "handled", "all"] as const).map((f) => (
           <button

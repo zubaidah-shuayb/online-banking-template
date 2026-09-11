@@ -15,9 +15,9 @@ import { formatMoney, type Account, type CardRow } from "@/integrations/velora/t
 export const Route = createFileRoute("/_authenticated/cards")({
   head: () => ({
     meta: [
-      { title: "Your cards — VELORA Bank" },
-      { name: "description", content: "Freeze cards, set spending limits and manage your VELORA virtual debit cards." },
-      { property: "og:title", content: "Your cards — VELORA Bank" },
+      { title: "Your cards — velora Bank" },
+      { name: "description", content: "Freeze cards, set spending limits and manage your velora virtual debit cards." },
+      { property: "og:title", content: "Your cards — velora Bank" },
       { property: "og:description", content: "Premium virtual cards with instant freeze, limits and PIN control." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -185,7 +185,7 @@ function CardsPage() {
     String(user?.user_metadata?.full_name ?? user?.email ?? "");
 
   return (
-    <AppShell title="Cards" subtitle="Freeze, limit and secure every VELORA card.">
+    <AppShell title="Cards" subtitle="Freeze, limit and secure every velora card.">
       {accounts.isLoading ? (
         <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
           {[0, 1, 2].map((i) => (

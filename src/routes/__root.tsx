@@ -77,9 +77,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "VELORA Bank" },
+      { title: "velora Bank" },
       { name: "description", content: "Modern Banking. Timeless Trust." },
-      { name: "author", content: "VELORA Bank" },
+      { name: "author", content: "velora Bank" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],

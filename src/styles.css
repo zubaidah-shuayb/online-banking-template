@@ -5,7 +5,7 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
- * VELORA BANK design system.
+ * velora BANK design system.
  * Skins are applied via [data-skin="..."] on <html>.
  * All colors use oklch. Never hardcode colors in components.
  */

@@ -1,4 +1,4 @@
-export function VELORALogo({ compact = false }: { compact?: boolean }) {
+export function veloraLogo({ compact = false }: { compact?: boolean }) {
   return (
     <span className="flex items-center gap-2.5">
       <span className="relative grid h-9 w-9 place-items-center rounded-xl bg-gradient-to-br from-primary to-primary-glow elevated">
@@ -15,7 +15,7 @@ export function VELORALogo({ compact = false }: { compact?: boolean }) {
       </span>
       {!compact && (
         <span className="font-display text-[15px] font-semibold tracking-[0.22em] text-foreground">
-          VELORA
+          velora
         </span>
       )}
     </span>

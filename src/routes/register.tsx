@@ -8,9 +8,9 @@ import { authErrorMessage } from "@/lib/auth-errors";
 import { AuthCard, authInput, PasswordInput } from "@/components/velora/auth-card";
 import { btn } from "@/components/velora/ui";
 
-const TITLE = "Open an account — VELORA Bank";
+const TITLE = "Open an account — velora Bank";
 const DESCRIPTION =
-  "Open a free VELORA Bank account with a multi-currency wallet in under a minute.";
+  "Open a free velora Bank account with a multi-currency wallet in under a minute.";
 
 export const Route = createFileRoute("/register")({
   head: () => ({
@@ -60,7 +60,7 @@ function RegisterPage() {
         });
       } else {
         toast.success("Account created successfully", {
-          description: "Your VELORA account is ready — please sign in to continue.",
+          description: "Your velora account is ready — please sign in to continue.",
         });
         await supabase.auth.signOut();
         setSent(true);
@@ -90,7 +90,7 @@ function RegisterPage() {
         <div className="rounded-2xl border border-border bg-surface/50 p-5 text-sm text-muted-foreground">
           <MailCheck className="mb-3 size-5 text-primary" />
           We sent a verification link to <span className="text-foreground">{form.email}</span>. Click it to
-          activate your VELORA account, then{" "}
+          activate your velora account, then{" "}
           <Link to="/login" className="text-primary hover:underline">
             sign in
           </Link>

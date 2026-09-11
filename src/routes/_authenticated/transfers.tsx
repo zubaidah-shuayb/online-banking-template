@@ -17,9 +17,9 @@ import {
 export const Route = createFileRoute("/_authenticated/transfers")({
   head: () => ({
     meta: [
-      { title: "Send money — VELORA Bank" },
-      { name: "description", content: "Move money instantly, save beneficiaries and schedule recurring VELORA transfers." },
-      { property: "og:title", content: "Send money — VELORA Bank" },
+      { title: "Send money — velora Bank" },
+      { name: "description", content: "Move money instantly, save beneficiaries and schedule recurring velora transfers." },
+      { property: "og:title", content: "Send money — velora Bank" },
       { property: "og:description", content: "Instant transfers, saved beneficiaries and scheduled payments." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -185,7 +185,7 @@ throw new Error(
   });
 
   return (
-    <AppShell title="Transfers" subtitle="Instant money movement between VELORA accounts.">
+    <AppShell title="Transfers" subtitle="Instant money movement between velora accounts.">
       <div className="grid gap-6 xl:grid-cols-[1.4fr_1fr]">
         <Panel>
           <div className="flex items-center justify-between gap-3">

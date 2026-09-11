@@ -26,7 +26,7 @@ const WHY = [
 ];
 
 const FAQS = [
-  { q: "What is VELORA Bank?", a: "VELORA Bank is a premium digital bank: multi-currency accounts, instant transfers, virtual cards, statements and receipts — all in one beautifully designed platform." },
+  { q: "What is velora Bank?", a: "velora Bank is a premium digital bank: multi-currency accounts, instant transfers, virtual cards, statements and receipts — all in one beautifully designed platform." },
   { q: "How do balances work?", a: "New customers start with a checking and savings balance of zero." },
   { q: "Which currencies are supported?", a: "More than 25 currencies including USD, EUR, GBP, NGN, CAD, AUD, AED, JPY, CHF, SAR, ZAR and INR. Customerscan enable, disable and assign currencies per customer." },
   { q: "Can I change how the platform looks?", a: "Customers can pick a bank skin depending on their preference and the entire platform restyles instantly." },
@@ -74,12 +74,12 @@ export function Currencies() {
   );
 }
 
-export function WhyVELORA() {
+export function Whyvelora() {
   return (
     <section className="relative py-16 sm:py-20 md:py-32">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <SectionHeading
-          eyebrow="Why VELORA"
+          eyebrow="Why velora"
           title={<>Designed like a flagship product</>}
         />
         <div className="mt-10 grid gap-4 sm:mt-14 sm:grid-cols-2 lg:grid-cols-3">

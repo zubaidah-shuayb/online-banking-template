@@ -7,8 +7,8 @@ import { authErrorMessage } from "@/lib/auth-errors";
 import { AuthCard, authInput, PasswordInput } from "@/components/velora/auth-card";
 import { btn } from "@/components/velora/ui";
 
-const TITLE = "Administrator sign in — VELORA Bank";
-const DESCRIPTION = "Secure sign-in for VELORA Bank administrators operating the control centre.";
+const TITLE = "Administrator sign in — velora Bank";
+const DESCRIPTION = "Secure sign-in for velora Bank administrators operating the control centre.";
 
 export const Route = createFileRoute("/admin/login")({
   ssr: false,
@@ -55,7 +55,7 @@ function AdminLogin() {
         return;
       }
 
-      toast.success("Welcome to the VELORA admin portal.");
+      toast.success("Welcome to the velora admin portal.");
       void navigate({ to: "/admin/dashboard", replace: true });
     } catch (err) {
       toast.error(authErrorMessage(err));
@@ -69,7 +69,7 @@ function AdminLogin() {
       back={false}
       badge="Restricted"
       title="Administrator sign in"
-      description="VELORA staff only. Customer credentials will not be accepted here."
+      description="velora staff only. Customer credentials will not be accepted here."
      
     >
       <form onSubmit={submit} className="space-y-3">

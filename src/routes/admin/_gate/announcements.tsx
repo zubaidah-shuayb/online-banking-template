@@ -12,10 +12,10 @@ import { formatDate } from "@/integrations/velora/types";
 export const Route = createFileRoute("/admin/_gate/announcements")({
   head: () => ({
     meta: [
-      { title: "Announcements — VELORA Bank admin" },
-      { name: "description", content: "Publish bank-wide announcements to VELORA customers." },
+      { title: "Announcements — velora Bank admin" },
+      { name: "description", content: "Publish bank-wide announcements to velora customers." },
       { name: "robots", content: "noindex" },
-      { property: "og:title", content: "Announcements — VELORA Bank admin" },
+      { property: "og:title", content: "Announcements — velora Bank admin" },
       { property: "og:description", content: "Publish bank-wide announcements." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -54,7 +54,7 @@ function AdminAnnouncements() {
   });
 
   return (
-    <AdminShell title="Announcements" subtitle="Broadcast messages to every VELORA customer.">
+    <AdminShell title="Announcements" subtitle="Broadcast messages to every velora customer.">
       <div className="grid gap-6 xl:grid-cols-[1fr_1.2fr]">
         <Panel>
           <h2 className="text-base font-semibold">New announcement</h2>

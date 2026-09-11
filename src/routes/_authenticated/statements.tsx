@@ -10,10 +10,10 @@ import { formatDate, formatMoney, txnDescription, txnLabel, type Account, type T
 export const Route = createFileRoute("/_authenticated/statements")({
   head: () => ({
     meta: [
-      { title: "Statements & receipts — VELORA Bank" },
-      { name: "description", content: "Filter your VELORA transaction history by account and period, then download statements and receipts." },
-      { property: "og:title", content: "Statements & receipts — VELORA Bank" },
-      { property: "og:description", content: "Download statements and per-transaction receipts from VELORA Bank." },
+      { title: "Statements & receipts — velora Bank" },
+      { name: "description", content: "Filter your velora transaction history by account and period, then download statements and receipts." },
+      { property: "og:title", content: "Statements & receipts — velora Bank" },
+      { property: "og:description", content: "Download statements and per-transaction receipts from velora Bank." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -98,7 +98,7 @@ function Statements() {
     download(
       `velora-receipt-${t.reference}.txt`,
       [
-        "VELORA BANK — TRANSACTION RECEIPT",
+        "velora BANK — TRANSACTION RECEIPT",
         "================================",
         `Reference     : ${t.reference}`,
         `Date          : ${new Date(t.created_at).toLocaleString()}`,
@@ -109,7 +109,7 @@ function Statements() {
         `Amount        : ${formatMoney(Number(t.amount), t.currency_code)}`,
         `Balance after : ${t.balance_after ?? "—"}`,
         "",
-        "VELORA Bank · This receipt was generated electronically and is valid without signature.",
+        "velora Bank · This receipt was generated electronically and is valid without signature.",
       ].join("\n"),
       "text/plain",
     );

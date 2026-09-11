@@ -9,16 +9,15 @@ export default defineConfig(({ command }) => ({
   plugins: [
     tsconfigPaths(),
     tailwindcss(),
+
     // Only run the router plugin during build to bypass the dev HMR bug
-    command === 'build' && tanstackRouter({
-      routeFileIgnorePrefix: '-',
-      autoCodeSplitting: false,
-    }),
+    command === 'build' &&
+      tanstackRouter({
+        routeFileIgnorePrefix: '-',
+        autoCodeSplitting: false,
+      }),
+
     tanstackStart(),
     react(),
   ].filter(Boolean),
-  define: {
-    __VELORA_SUPABASE_URL__: JSON.stringify(process.env.VELORA_SUPABASE_URL ?? ""),
-    __VELORA_SUPABASE_ANON_KEY__: JSON.stringify(process.env.VELORA_SUPABASE_ANON_KEY ?? ""),
-  },
 }))

@@ -8,10 +8,10 @@ import { formatDate, formatMoney } from "@/integrations/velora/types";
 export const Route = createFileRoute("/admin/_gate/transactions")({
   head: () => ({
     meta: [
-      { title: "Transactions — VELORA Bank admin" },
-      { name: "description", content: "Review every transaction across VELORA customers." },
+      { title: "Transactions — velora Bank admin" },
+      { name: "description", content: "Review every transaction across velora customers." },
       { name: "robots", content: "noindex" },
-      { property: "og:title", content: "Transactions — VELORA Bank admin" },
+      { property: "og:title", content: "Transactions — velora Bank admin" },
       { property: "og:description", content: "Review customer transactions." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

@@ -11,11 +11,11 @@ import { formatDate, formatMoney } from "@/integrations/velora/types";
 export const Route = createFileRoute("/admin/_gate/users")({
   head: () => ({
     meta: [
-      { title: "Users — VELORA Bank admin" },
-      { name: "description", content: "Manage VELORA customers, KYC status and account freezes." },
+      { title: "Users — velora Bank admin" },
+      { name: "description", content: "Manage velora customers, KYC status and account freezes." },
       { name: "robots", content: "noindex" },
-      { property: "og:title", content: "Users — VELORA Bank admin" },
-      { property: "og:description", content: "Manage VELORA customers." },
+      { property: "og:title", content: "Users — velora Bank admin" },
+      { property: "og:description", content: "Manage velora customers." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -75,7 +75,7 @@ function AdminUsers() {
   });
 
   return (
-    <AdminShell title="Users" subtitle="Every customer registered with VELORA Bank.">
+    <AdminShell title="Users" subtitle="Every customer registered with velora Bank.">
       <div className="space-y-4">
         {(profiles.data ?? []).map((p) => {
           const owned = (accounts.data ?? []).filter((a) => a.user_id === p.id);

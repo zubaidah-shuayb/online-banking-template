@@ -15,7 +15,7 @@ export function authErrorMessage(err: unknown): string {
     return "Incorrect email or password.";
   }
   if (/email not confirmed/i.test(msg)) {
-    return "Confirm your email first — check your inbox for the VELORA verification link.";
+    return "Confirm your email first — check your inbox for the velora verification link.";
   }
   return msg;
 }

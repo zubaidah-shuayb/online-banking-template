@@ -1,5 +1,5 @@
 -- ==================================================================== --
--- VELORA BANK — transaction posting upgrade
+-- velora BANK — transaction posting upgrade
 -- Run this ONCE in Supabase → SQL Editor (idempotent, safe to re-run)
 -- Adds: admin_create_transaction() + customer-safe wording everywhere
 -- ==================================================================== --

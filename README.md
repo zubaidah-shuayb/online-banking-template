@@ -1,5 +1,5 @@
 
-# Online Banking Template By ZUBAIDAH SHUAYB(ZEEAYB)
+# Online Banking Template by ZUBAIDAH SHUAYB(ZEEAYB)
 
 A modern and responsive online banking web application template built with React, TypeScript, Vite, TanStack Router, Tailwind CSS, and Supabase.
 

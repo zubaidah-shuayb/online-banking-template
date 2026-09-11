@@ -3,7 +3,7 @@ import { Wifi } from "lucide-react";
 import { formatMoney, type Account } from "@/integrations/velora/types";
 import { cn } from "@/lib/utils";
 
-function VELORAMark({ className }: { className?: string }) {
+function veloraMark({ className }: { className?: string }) {
   return (
     <svg viewBox="0 0 24 24" className={className} fill="none" aria-hidden="true">
       <path
@@ -59,8 +59,8 @@ export function BankCard({
       <div className="relative flex h-full flex-col justify-between">
         <div className="flex items-start justify-between">
           <div className="flex items-center gap-2">
-            <VELORAMark className="size-7" />
-            <span className="text-sm font-semibold tracking-[0.18em] uppercase">VELORA</span>
+            <veloraMark className="size-7" />
+            <span className="text-sm font-semibold tracking-[0.18em] uppercase">velora</span>
           </div>
           <Wifi className="size-5 rotate-90 opacity-80" />
         </div>

@@ -11,11 +11,11 @@ import { useBankSettings, logAdminAction } from "@/lib/admin-data";
 export const Route = createFileRoute("/admin/_gate/settings")({
   head: () => ({
     meta: [
-      { title: "Bank settings — VELORA Bank admin" },
-      { name: "description", content: "Configure VELORA bank name, tagline, default skin and maintenance mode." },
+      { title: "Bank settings — velora Bank admin" },
+      { name: "description", content: "Configure velora bank name, tagline, default skin and maintenance mode." },
       { name: "robots", content: "noindex" },
-      { property: "og:title", content: "Bank settings — VELORA Bank admin" },
-      { property: "og:description", content: "Configure VELORA Bank." },
+      { property: "og:title", content: "Bank settings — velora Bank admin" },
+      { property: "og:description", content: "Configure velora Bank." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -27,7 +27,7 @@ function AdminSettings() {
   const initial = useBankSettings().data;
   const qc = useQueryClient();
   const [form, setForm] = useState({
-    bank_name: "VELORA Bank",
+    bank_name: "velora Bank",
     tagline: "",
     support_email: "",
     default_skin: "classic",
@@ -37,7 +37,7 @@ function AdminSettings() {
   useEffect(() => {
     if (initial) {
       setForm({
-        bank_name: (initial.bank_name as string) ?? "VELORA Bank",
+        bank_name: (initial.bank_name as string) ?? "velora Bank",
         tagline: (initial.tagline as string) ?? "",
         support_email: (initial.support_email as string) ?? "",
         default_skin: (initial.default_skin as string) ?? "classic",
@@ -60,7 +60,7 @@ function AdminSettings() {
   });
 
   return (
-    <AdminShell title="Bank settings" subtitle="Global configuration for VELORA Bank.">
+    <AdminShell title="Bank settings" subtitle="Global configuration for velora Bank.">
       <Panel className="max-w-xl">
         <form
           className="space-y-3"

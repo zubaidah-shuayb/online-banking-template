@@ -13,10 +13,10 @@ import { formatMoney, type Transaction } from "@/integrations/velora/types";
 export const Route = createFileRoute("/admin/_gate/new-transaction")({
   head: () => ({
     meta: [
-      { title: "New transaction — VELORA Bank admin" },
-      { name: "description", content: "Post a transaction to any VELORA customer account with full receipt details." },
+      { title: "New transaction — velora Bank admin" },
+      { name: "description", content: "Post a transaction to any velora customer account with full receipt details." },
       { name: "robots", content: "noindex" },
-      { property: "og:title", content: "New transaction — VELORA Bank admin" },
+      { property: "og:title", content: "New transaction — velora Bank admin" },
       { property: "og:description", content: "Post customer transactions with full receipt details." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

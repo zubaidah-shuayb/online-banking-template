@@ -62,7 +62,7 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.16 }}
             className="mx-auto mt-5 max-w-xl text-base leading-relaxed text-muted-foreground sm:mt-6 sm:text-lg lg:mx-0"
           >
-            VELORA Bank is premium digital banking — multi-currency accounts, instant
+            velora Bank is premium digital banking — multi-currency accounts, instant
             transfers, statements and round-the-clock control. Built for the people,
              with the polish of a global digital bank.
           </motion.p>
@@ -107,7 +107,7 @@ export function Hero() {
           >
             <motion.img
               src={laptop}
-              alt="VELORA Bank customer dashboard on a laptop"
+              alt="velora Bank customer dashboard on a laptop"
               width={1200}
               height={848}
               className="w-full drop-shadow-[0_30px_50px_rgba(0,0,0,0.5)] sm:drop-shadow-[0_50px_80px_rgba(0,0,0,0.55)]"
@@ -116,7 +116,7 @@ export function Hero() {
             />
             <motion.img
               src={phone}
-              alt="VELORA Bank mobile app"
+              alt="velora Bank mobile app"
               width={640}
               height={1280}
               loading="lazy"

@@ -1,5 +1,5 @@
 -- ============================================================================
--- VELORA BANK — feature completion migration (idempotent, safe to re-run)
+-- velora BANK — feature completion migration (idempotent, safe to re-run)
 -- Run this in Supabase → SQL Editor.
 -- ============================================================================
 

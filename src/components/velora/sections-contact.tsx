@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input";
 import { supabase } from "@/integrations/velora/client";
 
 import { Textarea } from "@/components/ui/textarea";
-import { VELORALogo } from "./logo";
+import { veloraLogo } from "./logo";
 import { btn, Reveal, SectionHeading } from "./ui";
 
 const DETAILS = [
@@ -24,8 +24,8 @@ export function Contact() {
           <SectionHeading
             align="left"
             eyebrow="Contact"
-            title={<>Talk to the VELORA team</>}
-            description="Questions about your account, our products, or getting started with VELORA — our team replies quickly."
+            title={<>Talk to the velora team</>}
+            description="Questions about your account, our products, or getting started with velora — our team replies quickly."
           />
           <div className="mt-10 grid gap-3 sm:grid-cols-2">
             {DETAILS.map((d, i) => (
@@ -105,7 +105,7 @@ export function Newsletter() {
           <div className="aurora pointer-events-none absolute inset-0 opacity-50" />
           <div className="relative">
             <h2 className="text-balance text-2xl font-semibold sm:text-3xl md:text-4xl">
-              Product notes, straight from VELORA
+              Product notes, straight from velora
             </h2>
             <p className="mx-auto mt-3 max-w-md text-sm text-muted-foreground">
               Occasional updates on new products, features and rates.
@@ -113,7 +113,7 @@ export function Newsletter() {
             <form
               onSubmit={(e) => {
                 e.preventDefault();
-                toast.success("You're subscribed", { description: "Look out for VELORA updates in your inbox." });
+                toast.success("You're subscribed", { description: "Look out for velora updates in your inbox." });
                 setEmail("");
               }}
               className="mx-auto mt-8 flex max-w-md flex-col gap-3 sm:flex-row"
@@ -151,7 +151,7 @@ export function Footer() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="grid gap-8 sm:grid-cols-2 sm:gap-10 md:grid-cols-[1.4fr_repeat(3,1fr)]">
           <div>
-            <VELORALogo />
+            <veloraLogo />
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground">
               Modern Banking. Timeless Trust. Premium multi-currency accounts, instant transfers,
               financial institutions.
@@ -185,8 +185,8 @@ export function Footer() {
           ))}
         </div>
         <div className="mt-12 flex flex-col items-center justify-between gap-3 border-t border-border pt-6 text-xs text-muted-foreground sm:flex-row">
-          <p>© {new Date().getFullYear()} VELORA Bank. All rights reserved.</p>
-          <p>Member VELORA Group. Deposits protected up to $250,000.</p>
+          <p>© {new Date().getFullYear()} velora Bank. All rights reserved.</p>
+          <p>Member velora Group. Deposits protected up to $250,000.</p>
         </div>
       </div>
     </footer>

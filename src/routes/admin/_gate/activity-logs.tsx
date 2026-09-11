@@ -7,10 +7,10 @@ import { formatDate } from "@/integrations/velora/types";
 export const Route = createFileRoute("/admin/_gate/activity-logs")({
   head: () => ({
     meta: [
-      { title: "Activity logs — VELORA Bank admin" },
-      { name: "description", content: "Audit trail of every administrative action at VELORA Bank." },
+      { title: "Activity logs — velora Bank admin" },
+      { name: "description", content: "Audit trail of every administrative action at velora Bank." },
       { name: "robots", content: "noindex" },
-      { property: "og:title", content: "Activity logs — VELORA Bank admin" },
+      { property: "og:title", content: "Activity logs — velora Bank admin" },
       { property: "og:description", content: "Administrative audit trail." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

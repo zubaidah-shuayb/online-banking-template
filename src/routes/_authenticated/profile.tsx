@@ -13,10 +13,10 @@ import { formatDate } from "@/integrations/velora/types";
 export const Route = createFileRoute("/_authenticated/profile")({
   head: () => ({
     meta: [
-      { title: "Your profile — VELORA Bank" },
-      { name: "description", content: "Manage your VELORA profile picture, personal details, preferred currency and password." },
-      { property: "og:title", content: "Your profile — VELORA Bank" },
-      { property: "og:description", content: "Manage your VELORA identity, currency preference and security." },
+      { title: "Your profile — velora Bank" },
+      { name: "description", content: "Manage your velora profile picture, personal details, preferred currency and password." },
+      { property: "og:title", content: "Your profile — velora Bank" },
+      { property: "og:description", content: "Manage your velora identity, currency preference and security." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -345,7 +345,7 @@ function ProfilePage() {
               />
               <Toggle
                 label="Product news"
-                hint="Occasional updates about new VELORA features."
+                hint="Occasional updates about new velora features."
                 checked={prefs.notify_marketing}
                 onChange={(v) => savePrefs.mutate({ notify_marketing: v })}
               />

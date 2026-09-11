@@ -18,7 +18,7 @@ import {
 } from "lucide-react";
 import { useState, type ReactNode } from "react";
 import { useAuth } from "@/lib/auth";
-import { VELORALogo } from "@/components/velora/logo";
+import { veloraLogo as VeloraLogo } from "@/components/velora/logo";
 import { cn } from "@/lib/utils";
 
 export const ADMIN_LINKS = [
@@ -79,7 +79,7 @@ export function AdminShell({
         <aside className="sticky top-0 hidden h-screen w-64 shrink-0 flex-col justify-between border-r border-border/60 px-5 py-7 lg:flex">
           <div className="space-y-8 overflow-y-auto">
             <div>
-              <VELORALogo />
+              <VeloraLogo />
               <p className="mt-2 text-[10px] font-semibold uppercase tracking-[0.2em] text-primary">
                 Admin portal
               </p>

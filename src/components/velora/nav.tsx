@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { Menu, X } from "lucide-react";
 import { motion } from "motion/react";
 import { useEffect, useState } from "react";
-import { VELORALogo } from "./logo";
+import { veloraLogo } from "./logo";
 import { SkinSwitcher } from "./skin-switcher";
 import { btn } from "./ui";
 
@@ -39,7 +39,7 @@ export function LandingNav() {
         }`}
       >
         <a href="#home" className="min-w-0 shrink-0">
-          <VELORALogo />
+          <veloraLogo />
         </a>
 
         <ul className="hidden items-center gap-1 lg:flex">

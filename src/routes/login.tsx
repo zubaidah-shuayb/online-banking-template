@@ -8,8 +8,8 @@ import { authErrorMessage } from "@/lib/auth-errors";
 import { AuthCard, authInput, PasswordInput } from "@/components/velora/auth-card";
 import { btn } from "@/components/velora/ui";
 
-const TITLE = "Sign in — VELORA Bank";
-const DESCRIPTION = "Sign in to your VELORA Bank dashboard and manage your accounts.";
+const TITLE = "Sign in — velora Bank";
+const DESCRIPTION = "Sign in to your velora Bank dashboard and manage your accounts.";
 
 export const Route = createFileRoute("/login")({
   head: () => ({
@@ -44,7 +44,7 @@ function LoginPage() {
         password: form.password,
       });
       if (error) throw error;
-      toast.success("Welcome back to VELORA.");
+      toast.success("Welcome back to velora.");
       void navigate({ to: "/dashboard", replace: true });
     } catch (err) {
       toast.error(authErrorMessage(err));
@@ -56,10 +56,10 @@ function LoginPage() {
   return (
     <AuthCard
       title="Welcome back"
-      description="Sign in to your VELORA banking dashboard."
+      description="Sign in to your velora banking dashboard."
       footer={
         <>
-          New to VELORA?{" "}
+          New to velora?{" "}
           <Link to="/register" className="font-medium text-primary hover:underline">
             Open an account
           </Link>
